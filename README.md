@@ -9,7 +9,7 @@ Esta prueba evalúa conocimientos de programación en base a una situación que 
 3.  Clonar el repositorio forkeado en tu computadora.
 4.  Úbicate en el repositorio raíz del proyecto (Ubicación del proyecto forkeado en tu computadora).
 5.  Abrir desde del navegador el archivo index.html de este proyecto.
-## Casos de uso
+## Casos de usos
 Un banco financiero implementó el juego, Adivina tu número, la cual consiste en adivinar un número entre 1 al 100 durante 10 intentos. Así mismo para facilitar dicho juego se debe cumplir los siguientes requisitos:
 * El número a adivinar debe pertenecer al conjunto de los enteros (e.g. 1, 2, 3...)
 * El número que ingresará el jugador debe pertenecer al conjunto de los enteros (e.g. 1, 2, 3...), en caso que no ingrese un número entero, debe mostrarse una alerta al usuario y no se debe incrementar un intento de prueba.
