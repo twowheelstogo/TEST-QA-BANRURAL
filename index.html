@@ -28,7 +28,8 @@
       <p>Hemos seleccionado un número aleatorío entre 1 a 100. Trata de adivinar el número, en un total de 10 turnos o menos. No te preocupes, te diremos sí el número es más alto o más bajo </p>
 
 <div class="form">
-  <label for="guessField">Ingresa el número a adivinar: </label><input type="text" id="guessField" class="guessField">
+  <label for="guessField">Ingresa el número a adivinar: </label>
+  <input type="text" id="guessField" class="guessField">
   <input type="submit" value="Ingresar el número aleatorio" class="guessSubmit">
 </div>
 
@@ -84,7 +85,7 @@
     guessField.value = '';
     guessField.focus();
   }
-  guessSubmit.addeventListener('click', checkGuess);
+  guessSubmit.addEventListener('click', checkGuess);
 
   function setGameOver() {
 	  guessField.disabled = true;
