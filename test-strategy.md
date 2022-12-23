@@ -10,3 +10,5 @@ Se procede a inspeccionar los erroes abriendo la consola del navegador  y el pri
 la cual se procede acorregir de la siguiente manera: addEventListener
 <img src="https://postimg.cc/xq15cv4q" alt="errordeEvento" width="600" height="400"/>
 
+## Se verifica el color de la Notificacion
+Una vez corregido el primer error se ejecuta de nuevo el programa y se verifica que la Notificacion de incorrecto esta mal ya que lo solicitado es que sino se adivina la notificacion debe ser de color negro y se muestra incorrecto en color verde. 
