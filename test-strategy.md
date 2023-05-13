@@ -7,4 +7,4 @@ Visualizando el codigo note los siguientes errores
 3. Note que si el numero ingresado es igual al random tenia un mensaje de PERDISTE con color negro y tenia que decir 
    FELICITACIONES, ADIVINASTE EL NUMERO y tenia que ser en color verde.
 4. Cuando llego al limite de los intentos salta un mensaje de FELICITACIONES, cuando deberia ser PERDISTE.
-5. Cuando aun no se ha adivinado el numero me arroja el mensaje de INCORRECTO con color verde y deberia ser color Negro
+5. Cuando aun no se ha adivinado el numero me arroja el mensaje de INCORRECTO con color verde y deberia ser color Negro.
