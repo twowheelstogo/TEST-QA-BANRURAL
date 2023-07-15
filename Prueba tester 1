@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adivina tu número</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #888;
+        }
+
+        #result {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .green {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Adivina tu número</h1>
+    <p>Intenta adivinar un número entre 1 y 100.</p>
+    <p>Tienes 10 intentos.</p>
+
+    <input type="number" id="guessInput">
+    <button onclick="checkGuess()">Adivinar</button>
+
+    <p id="result"></p>
+
+    <script>
+        var randomNumber = Math.floor(Math.random() * 100) + 1;
+        var attempts = 0;
+
+        function checkGuess() {
+            var guessInput = document.getElementById("guessInput");
+            var guess = parseInt(guessInput.value);
+
+            if (isNaN(guess)) {
+                alert("Por favor ingresa un número entero válido.");
+                return;
+            }
+
+            attempts++;
+
+            if (guess > randomNumber) {
+                showResult("Incorrecto! El número es menor.", "#000");
+            } else if (guess < randomNumber) {
+                showResult("Incorrecto! El número es mayor.", "#000");
+            } else {
+                showResult("¡Felicitaciones! ¡Adivinaste el número!", "green");
+            }
+
+            if (attempts === 10) {
+                showResult("¡Perdiste! El número era " + randomNumber + ".", "red");
+            }
+
+            guessInput.value = "";
+            guessInput.focus();
+        }
+
+        function showResult(message, color) {
+            var result = document.getElementById("result");
+            result.textContent = message;
+            result.style.color = color;
+        }
+    </script>
+</body>
+</html>
